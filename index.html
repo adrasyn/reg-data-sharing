@@ -74,8 +74,8 @@ td.cell:hover{transform:scale(1.14);z-index:5;outline:2px solid var(--ink);borde
 td.cell.sel{outline:3px solid var(--accent);border-radius:3px;z-index:6}
 .cell.dg{background:var(--dg)} .cell.g{background:var(--g)} .cell.lg{background:var(--lg)}
 .cell.a{background:var(--a)} .cell.r{background:var(--r)} .cell.diag{background:var(--d)}
-.bd-r{border-right:3px solid var(--surface)!important} .bd-b{border-bottom:3px solid var(--surface)!important}
-th.row.bd-b{border-bottom:3px solid var(--surface)}
+.bd-r{border-right-color:var(--hair)!important} .bd-b{border-bottom-color:var(--hair)!important}
+th.row.bd-b{border-bottom:0}
 /* detail panel */
 .panel{background:var(--surface);border:1px solid var(--hair);border-radius:14px;box-shadow:var(--shadow);
  padding:18px 18px 20px;position:sticky;top:16px;min-height:200px}
@@ -135,7 +135,7 @@ footer{margin-top:26px;color:var(--faint);font-size:12px;line-height:1.6;max-wid
 
 <div class="layout">
  <div class="gridcard">
-   <div class="hint">Reading: a row shows who that regulator can disclose <em>to</em>. Hover to focus; click for detail. Thicker lines separate function clusters.</div>
+   <div class="hint">Reading: a row shows who that regulator can disclose <em>to</em>. Hover to focus; click for detail. Faint lines separate function clusters.</div>
    <div id="grid"></div>
  </div>
  <aside class="panel" id="panel"><div class="empty">Select a cell to see the pathway — data type, purpose, conditions, consent, and links to the underlying legislation and MoU.</div></aside>
